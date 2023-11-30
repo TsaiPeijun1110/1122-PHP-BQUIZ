@@ -17,7 +17,11 @@
     </div>
 </div>
     <header class="container">
-        <img src="" alt="">
+        <?php
+        $img=$Title->find(['sh'=>1]);
+        
+        ?>
+        <img src="./img/<?=$img['img'];?>" alt="">
     </header>
     <main class="container">
         <h3 class="text-center">網站標題管理</h3>
