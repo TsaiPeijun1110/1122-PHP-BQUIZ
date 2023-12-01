@@ -10,3 +10,4 @@ $_POST['sh'] = 0;
 $Title->save($_POST);
 
 header("location:index.php");
+?>
