@@ -25,16 +25,16 @@
                 </div>
                 <!-- 選項 -->
                 <div class="bg-light">
-                    <div class="p-2">
+                    <div class="p-2" id="option">
                         <label for="">選項</label>
                         <input type="text" name="opt[]">
-                        <input type="button" value="更多">
+                        <input type="button" value="更多" onclick="more()">
                     </div>
                 </div>
-                <div>  
-                <input type="submit" value="新增">
-                <input type="reset" value="清空">
-            </div>
+                <div>
+                    <input type="submit" value="新增">
+                    <input type="reset" value="清空">
+                </div>
             </form>
         </fieldset>
 
@@ -45,3 +45,14 @@
 </body>
 
 </html>
+<script>
+
+    function more() {
+        let opt = `<div class="p-2">
+                        <label for="">選項</label>
+                        <input type="text" name="opt[]">
+                        <input type="button" value="更多">
+                    </div>`
+                    $("#option").before(opt)
+    }
+</script>
